@@ -1,6 +1,7 @@
 package jpabook.jpashop;
 
 import com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer;
+import jpabook.jpashop.domain.Member;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
