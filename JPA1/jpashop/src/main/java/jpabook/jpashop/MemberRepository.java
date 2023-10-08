@@ -2,6 +2,7 @@ package jpabook.jpashop;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import jpabook.jpashop.domain.Member;
 import org.springframework.stereotype.Repository;
 //스프링이 제공하는 기본 annotation
 @Repository

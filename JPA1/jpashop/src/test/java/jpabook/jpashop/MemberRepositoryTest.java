@@ -29,7 +29,7 @@ public class MemberRepositoryTest {
     public void testMember() throws Exception{
         //given
         Member member = new Member();
-        member.setUsername("memberA");
+        member.setName("memberA");
 
         //when
         //memberRepository.save(member); 코드에 Ctrl+Alt+V하면 Extract에서 변수 뽑아오는 코드로 바꿔준다.
@@ -39,7 +39,7 @@ public class MemberRepositoryTest {
         //then
         Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());//검증은 스프링에 assertj 라이브러리를 가지고 있기
         // 때문에 Assertions 바로 사용가능
-        Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
+        Assertions.assertThat(findMember.getName()).isEqualTo(member.getName());
         Assertions.assertThat(findMember).isEqualTo(member); // 영속성 context에서 식별자가 같으면 같은 entity로 인식한다.
 
     }

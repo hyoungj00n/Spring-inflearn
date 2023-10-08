@@ -27,7 +27,7 @@ public class Order {
 
     @OneToOne
     @JoinColumn(name="delivery_id")//1대1관계인 경우에 FK는 어디에 둬도 괜찮아서 한쪽에 정하고 연관관계 주인만 설정해주면 된다.
-    private Delivery dilivery;
+    private Delivery delivery;
 
 
     private LocalDateTime orderDate; //주문시간
