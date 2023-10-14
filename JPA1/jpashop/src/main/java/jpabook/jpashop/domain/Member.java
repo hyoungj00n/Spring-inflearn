@@ -23,6 +23,10 @@ public class Member {
     private Address address;
 
     @OneToMany(mappedBy = "member")//mapping 관계 설정 해주기, mappedby는 연관관계에서 거울이라는 의미(mapping 됨)
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>();// collection은 field에 하는게 안전하다.. (null방지, hibernate가 collection을 한번 감싸서 hibernater가 지원하는 collection으로 바꿈)
+    //가급적 변경하면 안된다.
+
+
+
 
 }
